@@ -23,11 +23,6 @@
 
 	spim2_default: spim2_default {
 		group1 {
-			pinmux = <SPIM2_MISO_GPIO5>,
-				 <SPIM2_SCLK_GPIO6>,
-				 <SPIM2_CSEL_GPIO9>;
-		};
-		group2 {
 			pinmux = <SPIM2_MOSI_GPIO2>;
 			output-low;
 		};
