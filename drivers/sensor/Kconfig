@@ -1,6 +1,6 @@
-# Copyright (c) 2021 Nordic Semiconductor ASA
+# Copyright (c) 2024 Espressif Systems (Shanghai) Co., Ltd.
 # SPDX-License-Identifier: Apache-2.0
 
 if SENSOR
-rsource "example_sensor/Kconfig"
+rsource "icm42670/Kconfig"
 endif # SENSOR
