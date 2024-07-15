@@ -5,16 +5,16 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-menuconfig ICM42670
+menuconfig ICM42670_TEMP
 	bool "ICM42670 Six-Axis Motion Tracking Device"
 	default y
-	depends on DT_HAS_INVENSENSE_ICM42670_ENABLED
-	select SPI if $(dt_compat_on_bus,$(DT_COMPAT_INVENSENSE_ICM42670),spi)
-	select I2C if $(dt_compat_on_bus,$(DT_COMPAT_INVENSENSE_ICM42670),i2c)
+	depends on DT_HAS_INVENSENSE_ICM42670_TEMP_ENABLED
+	select SPI if $(dt_compat_on_bus,$(DT_COMPAT_INVENSENSE_ICM42670_TEMP),spi)
+	select I2C if $(dt_compat_on_bus,$(DT_COMPAT_INVENSENSE_ICM42670_TEMP),i2c)
 	help
 	  Enable driver for ICM42670 SPI-based six-axis motion tracking device.
 
-if ICM42670
+if ICM42670_TEMP
 
 choice ICM42670_TRIGGER_MODE
 	prompt "Trigger mode"

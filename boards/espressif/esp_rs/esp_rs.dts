@@ -98,7 +98,7 @@
 	pinctrl-names = "default";
 
 	icm42670@68 {
-		compatible = "invensense,icm42670-i2c";
+		compatible = "invensense,icm42670-temp";
 		reg = <0x68>;
 		status = "okay";
 		// int-gpios = <&gpio0 11 GPIO_ACTIVE_HIGH>;

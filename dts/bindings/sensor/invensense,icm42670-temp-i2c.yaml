@@ -4,6 +4,6 @@
 
 description: ICM-42670 motion tracking device
 
-compatible: "invensense,icm42670"
+compatible: "invensense,icm42670-temp"
 
-include: [i2c-device.yaml, "invensense,icm42670.yaml"]
+include: [i2c-device.yaml, "invensense,icm42670-temp.yaml"]

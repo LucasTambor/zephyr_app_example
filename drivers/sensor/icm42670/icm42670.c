@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define DT_DRV_COMPAT invensense_icm42670
+#define DT_DRV_COMPAT invensense_icm42670_temp
 
 #include <zephyr/drivers/sensor.h>
 #include <zephyr/drivers/spi.h>

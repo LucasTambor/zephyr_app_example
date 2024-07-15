@@ -14,8 +14,8 @@
 #include <zephyr/drivers/i2c.h>
 #include <zephyr/kernel.h>
 
-#define ICM42670_BUS_SPI DT_HAS_COMPAT_ON_BUS_STATUS_OKAY(invensense_icm42670, spi)
-#define ICM42670_BUS_I2C DT_HAS_COMPAT_ON_BUS_STATUS_OKAY(invensense_icm42670, i2c)
+#define ICM42670_BUS_SPI DT_HAS_COMPAT_ON_BUS_STATUS_OKAY(invensense_icm42670_temp, spi)
+#define ICM42670_BUS_I2C DT_HAS_COMPAT_ON_BUS_STATUS_OKAY(invensense_icm42670_temp, i2c)
 
 union icm42670_bus {
 #if ICM42670_BUS_SPI
